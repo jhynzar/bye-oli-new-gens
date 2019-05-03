@@ -62,7 +62,7 @@ $(function(){
      * Disintegrates an element
      * @param {HTMLElement} $elm
      */
-    function disintegrate($elm) {
+    function disintegrate($elm, audio) { //Mj Added - audio as parameter for syncing
         html2canvas($elm).then($canvas => {    
             // create the container we'll use to replace the element with
             const $container = document.createElement("div");
@@ -81,6 +81,7 @@ $(function(){
             // then animate them
             $container.offsetLeft; // forces reflow, so CSS we apply below does transition
             if (!DEBUG) {
+            audio.play(); //Mj Added - parameter audio played for syncing
             // set the values the frame should animate to
             // note that this is done after reflow so the transitions trigger
             $frames.forEach($frame => {
@@ -164,8 +165,7 @@ $(function(){
         let timeoutMs = 0;
         disintegrationTargetsHtml.forEach((element, index) => {
             setTimeout(() => {
-                disintegrate(element);
-                audioHtml[index].play();
+                disintegrate(element, audioHtml[index]);
             }, timeoutMs);
             timeoutMs += 2000;
         });
