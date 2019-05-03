@@ -1,0 +1,14 @@
+.ig {
+    height: 120px;
+    width: 120px;
+    background-position: 0px 0px;
+    background-size: 5760px 120px;
+}
+
+.ig[data-action="snap"] {
+    background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_snap.png');
+}
+
+.ig[data-action="time"] {
+    background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_time.png');
+}
