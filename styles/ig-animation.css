@@ -6,9 +6,10 @@
 }
 
 .ig[data-action="snap"] {
-    background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_snap.png');
+    background-image: url('../images/thanos_snap.png');
 }
 
 .ig[data-action="time"] {
-    background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_time.png');
+    display: none;
+    background-image: url('../images/thanos_time.png');
 }

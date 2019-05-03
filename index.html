@@ -12,92 +12,32 @@
     <!-- Semantic UI Card -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/card.min.css">
 
+    <!-- Main Scripts and Styles -->
     <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/main.js"></script>
+
+    <!-- Infinity Gauntlet Disintegration Effect -->
+    <link rel="stylesheet" href="styles/ig-disintegration.css">
 
     <!-- Infinity Gauntlet Animation -->
     <link rel="stylesheet" href="styles/ig-animation.css">
-    <script src="scripts/ig-animation.js"></script>
 </head>
 <body>
     <div class="container d-flex flex-column align-items-center justify-content-center">
         <div class="subject-disappear p-4">
-            <div class="ui link four cards">
+            <div class="ui link four cards d-flex justify-content-center align-items-center">
 
-                <div class="card">
+                <!-- <div class="card disintegration-target">
                     <div class="image">
                         <img src="https://via.placeholder.com/360" alt="">
                     </div>
                     <div class="content">
                         <div class="header">Name Here</div>
                     </div>
+                </div> -->
+
+                <div class="spinner-border" style="width: 3rem; height: 3rem; margin: 15rem 15rem;" role="status">
+                    <span class="sr-only">Loading...</span>
                 </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="https://via.placeholder.com/360" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="header">Name Here</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="https://via.placeholder.com/360" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="header">Name Here</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="https://via.placeholder.com/360" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="header">Name Here</div>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="image">
-                        <img src="https://via.placeholder.com/360" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="header">Name Here</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="https://via.placeholder.com/360" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="header">Name Here</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="https://via.placeholder.com/360" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="header">Name Here</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="https://via.placeholder.com/360" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="header">Name Here</div>
-                    </div>
-                </div>
-
-
 
             </div>
         </div>
@@ -111,6 +51,35 @@
                 <audio class="igSound" src="https://www.google.com/logos/fnbx/thanos/thanos_reverse_sound.mp3"></audio>
             </div>
         </div>
+
+        <div>
+            <audio class="disintegration-audio" src="audios/thanos_dust_1.mp3"></audio>
+            <audio class="disintegration-audio" src="audios/thanos_dust_2.mp3"></audio>
+            <audio class="disintegration-audio" src="audios/thanos_dust_3.mp3"></audio>
+            <audio class="disintegration-audio" src="audios/thanos_dust_4.mp3"></audio>
+            <audio class="disintegration-audio" src="audios/thanos_dust_5.mp3"></audio>
+            <audio class="disintegration-audio" src="audios/thanos_dust_6.mp3"></audio>
+        </div>
     </div>
+
+
+
+     <!-- JQuery -->
+     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+     <!-- HTML2Canvas -->
+     <script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+ 
+     <!-- Targets -->
+     <script src="scripts/candidates.js"></script>
+ 
+     <!-- Main Scripts and Styles -->
+     <script src="scripts/main.js"></script>
+ 
+     <!-- Infinity Gauntlet Disintegration Effect -->
+     <script src="scripts/ig-disintegration.js"></script>
+ 
+     <!-- Infinity Gauntlet Animation -->
+     <script src="scripts/ig-animation.js"></script>
 </body>
 </html>

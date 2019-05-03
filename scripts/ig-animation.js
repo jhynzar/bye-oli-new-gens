@@ -1,4 +1,4 @@
-window.onload = function(){
+$(function(){
     
     let currentAction = 'snap';
 
@@ -40,8 +40,16 @@ window.onload = function(){
             else
             { 
                 position = startPosition;
+                
                 clearInterval(tID);
+                
+                //Start disintegration
+                if (currentAction === 'snap') {
+                    startDisintegration();
+                }
+
                 setAction( (currentAction === 'snap' ? 'time' : 'snap') );
+
             }
             //reset the position to startPosition, once position exceeds fullImageWidth
         }
@@ -51,7 +59,7 @@ window.onload = function(){
 
     document.querySelectorAll('.ig').forEach((element) => element.addEventListener('click', animateScript));
 
-};
+});
 
 
 
