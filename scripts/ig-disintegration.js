@@ -55,6 +55,7 @@ $(function(){
     $new.style.height = `${$old.offsetHeight}px`;
     $parent.appendChild($new);
     $old.style.visibility = "hidden";
+    $old.style.opacity = "0"; //Mj Added -  for time back
     }
 
     /**
@@ -113,8 +114,20 @@ $(function(){
         return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
     }
 
-    function playAudio() {
+    window.revertDisintegration = function timeBack() {
+        const disintegratedTargets = document.querySelectorAll('.disintegration-target');
 
+        disintegratedTargets.forEach(element => {
+            element.classList.remove('disintegration-target');
+        });
+
+        //wait for the animation of gauntlet then reset styles
+        setTimeout(() => {
+            disintegratedTargets.forEach(element => {
+                element.style.visibility = 'visible';
+                element.style.opacity = '1';
+            });
+        }, 1000);
     }
 
     window.startDisintegration = function startDisintegration() {

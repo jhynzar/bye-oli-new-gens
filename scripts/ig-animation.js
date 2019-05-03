@@ -27,6 +27,11 @@ $(function(){
         const  diff = 120;     //diff as a variable for position offset
         const  interval = 50; //100 ms of interval for the setInterval() Animation
 
+        //Of action is time, start reverting already - for audio sync
+        if(currentAction === 'time') {
+            revertDisintegration();
+        }
+
         audio.play();
 
         tID = setInterval ( () => {
