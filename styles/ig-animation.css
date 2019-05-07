@@ -6,10 +6,10 @@
 }
 
 .ig[data-action="snap"] {
-    background-image: url('../images/thanos_snap.png');
+    background-image: url('../images/infinity-gauntlet/thanos_snap.png');
 }
 
 .ig[data-action="time"] {
     display: none;
-    background-image: url('../images/thanos_time.png');
+    background-image: url('../images/infinity-gauntlet/thanos_time.png');
 }
