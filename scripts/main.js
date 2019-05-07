@@ -11,7 +11,10 @@ $(function(){
                     <img src="${target.imgBase64}" alt="">
                 </div>
                 <div class="content">
-                    <div class="header">${target.name}</div>
+                    <a class="center aligned header">${target.nickname}</a>
+                    <div class="center aligned meta">
+                        <a>${target.name}</a>
+                    </div>
                 </div>
             </div>
             `
